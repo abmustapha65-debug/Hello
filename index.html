@@ -1,118 +1,1329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- ✅ Google Site Verification -->
   <meta name="google-site-verification" content="Tp-z9W5R-MslCTCthDzH52ikGT3HB163khQ5xt6BSKk" />
 
-  <title>MGK ARKMA Digital Service</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body class="bg-black text-white font-sans">
+  <!-- ✅ SEO -->
+  <title>MGK ARKMA Digital Services -- CAC & TIN, NIN/BVN, Logos, Landing Pages</title>
+  <meta name="description" content="MGK ARKMA Digital Services: CAC & TIN registration, NIN/BVN corrections, logo & landing page design, TNT/courier support, and newspaper publications. Professional, fast, and reliable." />
+  <meta name="keywords" content="MGK ARKMA Digital Services, CAC, TIN, NIN, BVN, logo design, landing page, newspaper publication, TNT, Nigeria" />
+  <meta name="author" content="MGK ARKMA Digital Services" />
 
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-black to-yellow-900 p-6 text-center shadow-lg">
-    <h1 class="text-3xl md:text-4xl font-bold text-yellow-400 animate-pulse">MGK ARKMA Digital Service</h1>
-    <p class="text-gray-300 mt-2 text-sm md:text-lg">Your Trusted Partner in Digital & Business Solutions</p>
+  <!-- ✅ Open Graph / Social -->
+  <meta property="og:title" content="MGK ARKMA Digital Services" />
+  <meta property="og:description" content="Reliable digital & business services: CAC/TIN registration, NIN/BVN corrections, logo & landing page design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#FACC15', // amber-400 as brand gold
+              dark: '#0a0a0a'
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 3px rgba(250, 204, 21, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Smooth scroll for in-page links */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-yellow-900 text-white font-sans selection:bg-yellow-500 selection:text-black">
+
+  <!-- Top Bar -->
+  <div class="bg-black/70 text-gray-300 text-sm px-4 py-2 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+    <span>📧 <a class="hover:text-brand-gold" href="mailto:musteegoku@gmail.com">musteegoku@gmail.com</a></span>
+    <span>💬 <a class="hover:text-brand-gold" href="https://wa.me/2348138588514" target="_blank" rel="noopener">+234 813 858 8514</a></span>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-gradient-to-r from-black/90 to-yellow-900/30 backdrop-blur border-b border-yellow-900/30">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2 group">
+        <div class="h-9 w-9 rounded-xl bg-yellow-500/20 grid place-items-center ring-1 ring-yellow-500/30 group-hover:shadow-glow transition">
+          <span class="font-black text-yellow-400">MGK</span>
+        </div>
+        <div class="leading-tight">
+          <p class="font-bold text-yellow-400">MGK ARKMA</p>
+          <p class="text-[11px] uppercase tracking-widest text-gray-300">Digital Services</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-yellow-400" href="#services">Services</a>
+        <a class="hover:text-yellow-400" href="#pricing">Pricing</a>
+        <a class="hover:text-yellow-400" href="#referral">Referral</a>
+        <a class="hover:text-yellow-400" href="#testimonials">Reviews</a>
+        <a class="hover:text-yellow-400" href="#contact">Contact</a>
+      </nav>
+      <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-yellow-500 text-black px-4 py-2 rounded-xl font-semibold shadow hover:scale-[1.02] active:scale-[.98] transition">
+        <span class="animate-pulse">WhatsApp</span> 💬
+      </a>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="text-center py-16 bg-black min-h-screen flex flex-col justify-center items-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 animate-bounce">Professional & Reliable Services</h2>
-    <p class="mt-4 text-gray-300 text-sm md:text-lg max-w-2xl mx-auto">
-      We specialize in Logo Design, NIN & BVN Corrections, CAC Registration, TNT Services, and Newspaper Publications.
-    </p>
-    <a href="https://wa.me/2348138588514" target="_blank" rel="noopener noreferrer"
-       class="mt-6 inline-block bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow-lg hover:bg-yellow-400 hover:scale-105 transition transform duration-300">
-      💬 Chat on WhatsApp
-    </a>
+  <!-- Hero -->
+  <section id="home" class="relative min-h-[85vh] grid place-items-center text-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1600&q=80" alt="Abstract tech background" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/70 to-gray-900/80"></div>
+
+    <div class="relative z-10 max-w-3xl px-4 md:px-6">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-yellow-400 tracking-tight animate-bounce">
+        Professional & Reliable Digital Services
+      </h1>
+      <p class="mt-4 text-gray-200 text-base md:text-lg">
+        We offer <span class="font-semibold text-yellow-300">Logo Design</span>, <span class="font-semibold text-yellow-300">Landing Pages</span>, <span class="font-semibold text-yellow-300">NIN & BVN Corrections</span>, <span class="font-semibold text-yellow-300">CAC & TIN Registration</span>, TNT services, and Newspaper Publications.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#services" class="inline-block bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition">Explore Services</a>
+        <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="inline-block border border-yellow-500/60 px-6 py-3 rounded-xl font-semibold text-yellow-300 hover:bg-yellow-500/10 transition animate-pulse">Chat on WhatsApp</a>
+      </div>
+    </div>
   </section>
 
   <!-- Services -->
-  <section class="py-16 bg-gradient-to-b from-black to-gray-900">
-    <div class="max-w-5xl mx-auto px-6">
-      <h3 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">Our Services</h3>
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        
-        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-          <h4 class="text-xl font-semibold text-yellow-300">Logo Design</h4>
-          <p class="text-gray-400 mt-2">Creative and unique logos to represent your brand professionally.</p>
+  <section id="services" class="py-16 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">Our Services</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Logo & Branding</h3>
+          <p class="text-gray-300 mt-2">Creative, memorable logos and brand identity that represent your business professionally.</p>
         </div>
-        
-        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-          <h4 class="text-xl font-semibold text-yellow-300">NIN & BVN Correction</h4>
-          <p class="text-gray-400 mt-2">Fast and reliable support for your NIN and BVN updates.</p>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Landing Pages</h3>
+          <p class="text-gray-300 mt-2">High-converting, mobile-friendly pages to present your offers clearly.</p>
         </div>
-        
-        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-          <h4 class="text-xl font-semibold text-yellow-300">CAC Registration</h4>
-          <p class="text-gray-400 mt-2">Register your business officially with Corporate Affairs Commission.</p>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">NIN & BVN Corrections</h3>
+          <p class="text-gray-300 mt-2">Fast and reliable support for personal data updates.</p>
         </div>
-        
-        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-          <h4 class="text-xl font-semibold text-yellow-300">TNT Services</h4>
-          <p class="text-gray-400 mt-2">Quick and safe delivery and courier support services.</p>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">CAC & TIN Registration</h3>
+          <p class="text-gray-300 mt-2">Register your business officially with the Corporate Affairs Commission.</p>
         </div>
-        
-        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-          <h4 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h4>
-          <p class="text-gray-400 mt-2">Get your business and services published in leading newspapers.</p>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">TNT / Courier Support</h3>
+          <p class="text-gray-300 mt-2">Quick and safe support for sending and receiving documents.</p>
         </div>
-
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h3>
+          <p class="text-gray-300 mt-2">Get your announcements published in leading newspapers.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing Section -->
-  <section class="py-16 bg-gradient-to-b from-black to-gray-900 text-center">
-    <h3 class="text-2xl md:text-3xl font-bold text-yellow-400 mb-6">Our Pricing</h3>
-    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 px-6">
-      
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-        <h4 class="text-xl font-semibold text-yellow-300">Logo Design</h4>
-        <p class="mt-2 text-gray-400">Get a unique professional logo for your brand.</p>
-        <p class="mt-4 text-2xl font-bold text-yellow-400">₦1000</p>
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">Transparent Pricing</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Logo Design</h3>
+          <p class="mt-2 text-gray-300">Unique professional logo for your brand.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">₦1,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Landing Page</h3>
+          <p class="mt-2 text-gray-300">Single-page website to showcase your business.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">₦5,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">NIN & BVN Correction</h3>
+          <p class="mt-2 text-gray-300">Depends on your request. Chat us for details.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">Custom</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">CAC & TIN Registration</h3>
+          <p class="mt-2 text-gray-300">Official registration services.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">From ₦20,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h3>
+          <p class="mt-2 text-gray-300">Announcements in top newspapers.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">From ₦20,000</p>
+        </div>
       </div>
-
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-        <h4 class="text-xl font-semibold text-yellow-300">Landing Page</h4>
-        <p class="mt-2 text-gray-400">A professional single-page website to showcase your business.</p>
-        <p class="mt-4 text-2xl font-bold text-yellow-400">₦5000</p>
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-        <h4 class="text-xl font-semibold text-yellow-300">NIN & BVN Correction</h4>
-        <p class="mt-2 text-gray-400">Depends on your request (chat us for details).</p>
-        <p class="mt-4 text-2xl font-bold text-yellow-400">Custom</p>
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-        <h4 class="text-xl font-semibold text-yellow-300">CAC & TIN Registration</h4>
-        <p class="mt-2 text-gray-400">Register your business officially in Nigeria.</p>
-        <p class="mt-4 text-2xl font-bold text-yellow-400">Chat Us</p>
-      </div>
-
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
-        <h4 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h4>
-        <p class="mt-2 text-gray-400">Publish your announcement in top newspapers.</p>
-        <p class="mt-4 text-2xl font-bold text-yellow-400">Chat Us</p>
-      </div>
-
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-black text-gray-400 py-6 text-center border-t border-gray-800">
-    <p>© 2025 MGK ARKMA Digital Service. All Rights Reserved.</p>
-    <div class="flex justify-center space-x-6 mt-4">
-      <a href="mailto:musteegoku@gmail.com" class="hover:text-yellow-400 transition">📧 Email</a>
-      <a href="https://wa.me/2348138588514" target="_blank" class="hover:text-yellow-400 transition">💬 WhatsApp</a>
-      <a href="https://www.facebook.com/profile.php?id=61578570127200" target="_blank" class="hover:text-yellow-400 transition">📘 Facebook</a>
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-gradient-to-b from-gray-900 to-black">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">What Our Clients Say</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"MGK ARKMA designed my logo and landing page. The result was outstanding and professional!"</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- Aisha, Business Owner</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"They helped me fix my NIN and BVN issues quickly. Highly recommend their services."</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- Musa, Entrepreneur</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"I registered my company through them. Fast, reliable, and very affordable."</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- David, CEO</p>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
 
+  <!-- Referral Program (Form + Extra Copy/Share Options) -->
+  <section id="referral" class="py-16 bg-gray-100 text-gray-900">
+    <div class="max-w-3xl mx-auto px-4 md:px-6 text-center">
+      <h2 class="text-3xl font-extrabold mb-3">🎉 Refer a Friend & Get 50% OFF</h2>
+      <p class="text-gray-700">Fill in the details below. On submit, we'll open WhatsApp with your referral pre-filled to <span class="font-semibold">+234 813 858 8514</span>.</p>
+
+      <!-- WhatsApp Referral Form -->
+      <form id="referralForm" class="mt-8 grid gap-4 text-left">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="text-sm font-medium">Your Name</span>
+            <input type="text" name="referrer" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., Mustapha Abdulrasheed" required />
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Your Phone (optional)</span>
+            <input type="tel" name="referrerPhone" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., 0803…" />
+          </label>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="text-sm font-medium">Friend's Name</span>
+            <input type="text" name="friend" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., Aisha Bello" required />
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Friend's Phone</span>
+            <input type="tel" name="friendPhone" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., 0813…" required />
+          </label>
+        </div>
+        <label class="block">
+          <span class="text-sm font-medium">Notes (optional)</span>
+          <textarea name="notes" rows="3" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Any extra info…"></textarea>
+        </label>
+
+        <button type="submit" class="mt-2 inline-flex justify-center items-center gap-2 bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-[1.02] active:scale-[.98] transition">
+          Submit & Open WhatsApp 💬
+        </button>
+      </form>
+
+      <!-- Extra: Copy/Share Referral (from version 4) -->
+      <div class="mt-8 p-4 rounded-xl border border-gray-300 bg-white/70 text-gray-800">
+        <p class="font-semibold mb-3">Or share your referral link directly:</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <button id="copyLinkBtn" class="px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:scale-105 transition">📋 Copy Referral Link</button>
+          <a id="waShareLink" href="#" target="_blank" class="px-5 py-3 rounded-xl bg-green-600 text-white font-semibold hover:scale-105 transition">💬 Share on WhatsApp</a>
+        </div>
+        <p id="copyMessage" class="mt-3 text-green-700 hidden">✅ Referral link copied!</p>
+      </div>
+
+      <!-- Toast / Confirmation -->
+      <div id="toast" class="pointer-events-none fixed inset-x-0 top-4 mx-auto w-[90%] sm:w-auto hidden">
+        <div class="bg-black text-white/90 border border-yellow-500/40 px-4 py-3 rounded-xl shadow-glow">
+          Redirecting you to WhatsApp…
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section id="contact" class="bg-black text-gray-300 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10 text-center">
+      <p class="text-sm uppercase tracking-widest text-gray-400">Contact</p>
+      <h3 class="text-2xl md:text-3xl font-bold text-yellow-400 mt-1">We're here to help</h3>
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="mailto:musteegoku@gmail.com" class="px-5 py-3 rounded-xl border border-yellow-500/50 hover:bg-yellow-500/10">📧 Email</a>
+        <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl bg-yellow-500 text-black font-semibold">💬 WhatsApp</a>
+        <a href="https://www.facebook.com/profile.php?id=61578570127200" target="_blank" class="px-5 py-3 rounded-xl border border-yellow-500/50 hover:bg-yellow-500/10">📘 Facebook</a>
+      </div>
+      <p class="mt-8 text-xs text-gray-500">© 2025 MGK ARKMA Digital Services. All Rights Reserved.</p>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="fixed bottom-5 right-5 inline-flex items-center justify-center h-14 w-14 rounded-full bg-green-500 shadow-lg hover:scale-110 active:scale-95 transition" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // ===== Config =====
+    const WA_NUMBER = '2348138588514';
+    const REFERRAL_LINK = 'https://mgkarkmadigitalservice.netlify.app/';
+
+    // ===== Referral form -> open WhatsApp with pre-filled message =====
+    const form = document.getElementById('referralForm');
+    const toast = document.getElementById('toast');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const referrer = (data.get('referrer') || '').trim();
+      const referrerPhone = (data.get('referrerPhone') || '').trim();
+      const friend = (data.get('friend') || '').trim();
+      const friendPhone = (data.get('friendPhone') || '').trim();
+      const notes = (data.get('notes') || '').trim();
+
+      if (!referrer || !friend || !friendPhone) {
+        alert('Please fill in Your Name, Friend\\'s Name, and Friend\\'s Phone.');
+        return;
+      }
+
+      const message =
+        `New referral for MGK ARKMA:%0A` +
+        `Referrer: ${encodeURIComponent(referrer)}%0A` +
+        (referrerPhone ? `Referrer Phone: ${encodeURIComponent(referrerPhone)}%0A` : '') +
+        `Friend: ${encodeURIComponent(friend)}%0A` +
+        `Friend Phone: ${encodeURIComponent(friendPhone)}%0A` +
+        (notes ? `Notes: ${encodeURIComponent(notes)}%0A` : '') +
+        `%0APlease guide them on next steps. Thank you.`;
+
+      showToast();
+      const waUrl = `https://wa.me/${WA_NUMBER}?text=${message}`;
+      window.open(waUrl, '_blank', 'noopener');
+    });
+
+    function showToast() {
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 2500);
+    }
+
+    // ===== Extra referral actions (Copy link + WhatsApp share) =====
+    const copyBtn = document.getElementById('copyLinkBtn');
+    const copyMsg = document.getElementById('copyMessage');
+    const waShare = document.getElementById('waShareLink');
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(REFERRAL_LINK);
+        copyMsg.classList.remove('hidden');
+        setTimeout(() => copyMsg.classList.add('hidden'), 3000);
+      } catch (e) {
+        alert('Could not copy link. Please copy manually: ' + REFERRAL_LINK);
+      }
+    });
+
+    const shareText = encodeURIComponent(`Hey! Check out MGK ARKMA Digital Services and get 50% off your next service: ${REFERRAL_LINK}`);
+    waShare.href = `https://wa.me/?text=${shareText}`;
+  </script>
 </body>
-</html>
+</html>m<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ✅ Google Site Verification -->
+  <meta name="google-site-verification" content="Tp-z9W5R-MslCTCthDzH52ikGT3HB163khQ5xt6BSKk" />
+
+  <!-- ✅ SEO -->
+  <title>MGK ARKMA Digital Services -- CAC & TIN, NIN/BVN, Logos, Landing Pages</title>
+  <meta name="description" content="MGK ARKMA Digital Services: CAC & TIN registration, NIN/BVN corrections, logo & landing page design, TNT/courier support, and newspaper publications. Professional, fast, and reliable." />
+  <meta name="keywords" content="MGK ARKMA Digital Services, CAC, TIN, NIN, BVN, logo design, landing page, newspaper publication, TNT, Nigeria" />
+  <meta name="author" content="MGK ARKMA Digital Services" />
+
+  <!-- ✅ Open Graph / Social -->
+  <meta property="og:title" content="MGK ARKMA Digital Services" />
+  <meta property="og:description" content="Reliable digital & business services: CAC/TIN registration, NIN/BVN corrections, logo & landing page design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#FACC15', // amber-400 as brand gold
+              dark: '#0a0a0a'
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 3px rgba(250, 204, 21, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Smooth scroll for in-page links */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-yellow-900 text-white font-sans selection:bg-yellow-500 selection:text-black">
+
+  <!-- Top Bar -->
+  <div class="bg-black/70 text-gray-300 text-sm px-4 py-2 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+    <span>📧 <a class="hover:text-brand-gold" href="mailto:musteegoku@gmail.com">musteegoku@gmail.com</a></span>
+    <span>💬 <a class="hover:text-brand-gold" href="https://wa.me/2348138588514" target="_blank" rel="noopener">+234 813 858 8514</a></span>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-gradient-to-r from-black/90 to-yellow-900/30 backdrop-blur border-b border-yellow-900/30">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2 group">
+        <div class="h-9 w-9 rounded-xl bg-yellow-500/20 grid place-items-center ring-1 ring-yellow-500/30 group-hover:shadow-glow transition">
+          <span class="font-black text-yellow-400">MGK</span>
+        </div>
+        <div class="leading-tight">
+          <p class="font-bold text-yellow-400">MGK ARKMA</p>
+          <p class="text-[11px] uppercase tracking-widest text-gray-300">Digital Services</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-yellow-400" href="#services">Services</a>
+        <a class="hover:text-yellow-400" href="#pricing">Pricing</a>
+        <a class="hover:text-yellow-400" href="#referral">Referral</a>
+        <a class="hover:text-yellow-400" href="#testimonials">Reviews</a>
+        <a class="hover:text-yellow-400" href="#contact">Contact</a>
+      </nav>
+      <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-yellow-500 text-black px-4 py-2 rounded-xl font-semibold shadow hover:scale-[1.02] active:scale-[.98] transition">
+        <span class="animate-pulse">WhatsApp</span> 💬
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative min-h-[85vh] grid place-items-center text-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1600&q=80" alt="Abstract tech background" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/70 to-gray-900/80"></div>
+
+    <div class="relative z-10 max-w-3xl px-4 md:px-6">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-yellow-400 tracking-tight animate-bounce">
+        Professional & Reliable Digital Services
+      </h1>
+      <p class="mt-4 text-gray-200 text-base md:text-lg">
+        We offer <span class="font-semibold text-yellow-300">Logo Design</span>, <span class="font-semibold text-yellow-300">Landing Pages</span>, <span class="font-semibold text-yellow-300">NIN & BVN Corrections</span>, <span class="font-semibold text-yellow-300">CAC & TIN Registration</span>, TNT services, and Newspaper Publications.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#services" class="inline-block bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition">Explore Services</a>
+        <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="inline-block border border-yellow-500/60 px-6 py-3 rounded-xl font-semibold text-yellow-300 hover:bg-yellow-500/10 transition animate-pulse">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">Our Services</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Logo & Branding</h3>
+          <p class="text-gray-300 mt-2">Creative, memorable logos and brand identity that represent your business professionally.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Landing Pages</h3>
+          <p class="text-gray-300 mt-2">High-converting, mobile-friendly pages to present your offers clearly.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">NIN & BVN Corrections</h3>
+          <p class="text-gray-300 mt-2">Fast and reliable support for personal data updates.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">CAC & TIN Registration</h3>
+          <p class="text-gray-300 mt-2">Register your business officially with the Corporate Affairs Commission.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">TNT / Courier Support</h3>
+          <p class="text-gray-300 mt-2">Quick and safe support for sending and receiving documents.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h3>
+          <p class="text-gray-300 mt-2">Get your announcements published in leading newspapers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">Transparent Pricing</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Logo Design</h3>
+          <p class="mt-2 text-gray-300">Unique professional logo for your brand.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">₦1,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Landing Page</h3>
+          <p class="mt-2 text-gray-300">Single-page website to showcase your business.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">₦5,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">NIN & BVN Correction</h3>
+          <p class="mt-2 text-gray-300">Depends on your request. Chat us for details.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">Custom</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">CAC & TIN Registration</h3>
+          <p class="mt-2 text-gray-300">Official registration services.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">From ₦20,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h3>
+          <p class="mt-2 text-gray-300">Announcements in top newspapers.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">From ₦20,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-gradient-to-b from-gray-900 to-black">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">What Our Clients Say</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"MGK ARKMA designed my logo and landing page. The result was outstanding and professional!"</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- Aisha, Business Owner</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"They helped me fix my NIN and BVN issues quickly. Highly recommend their services."</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- Musa, Entrepreneur</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"I registered my company through them. Fast, reliable, and very affordable."</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- David, CEO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referral Program (Form + Extra Copy/Share Options) -->
+  <section id="referral" class="py-16 bg-gray-100 text-gray-900">
+    <div class="max-w-3xl mx-auto px-4 md:px-6 text-center">
+      <h2 class="text-3xl font-extrabold mb-3">🎉 Refer a Friend & Get 50% OFF</h2>
+      <p class="text-gray-700">Fill in the details below. On submit, we'll open WhatsApp with your referral pre-filled to <span class="font-semibold">+234 813 858 8514</span>.</p>
+
+      <!-- WhatsApp Referral Form -->
+      <form id="referralForm" class="mt-8 grid gap-4 text-left">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="text-sm font-medium">Your Name</span>
+            <input type="text" name="referrer" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., Mustapha Abdulrasheed" required />
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Your Phone (optional)</span>
+            <input type="tel" name="referrerPhone" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., 0803…" />
+          </label>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="text-sm font-medium">Friend's Name</span>
+            <input type="text" name="friend" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., Aisha Bello" required />
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Friend's Phone</span>
+            <input type="tel" name="friendPhone" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., 0813…" required />
+          </label>
+        </div>
+        <label class="block">
+          <span class="text-sm font-medium">Notes (optional)</span>
+          <textarea name="notes" rows="3" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Any extra info…"></textarea>
+        </label>
+
+        <button type="submit" class="mt-2 inline-flex justify-center items-center gap-2 bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-[1.02] active:scale-[.98] transition">
+          Submit & Open WhatsApp 💬
+        </button>
+      </form>
+
+      <!-- Extra: Copy/Share Referral (from version 4) -->
+      <div class="mt-8 p-4 rounded-xl border border-gray-300 bg-white/70 text-gray-800">
+        <p class="font-semibold mb-3">Or share your referral link directly:</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <button id="copyLinkBtn" class="px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:scale-105 transition">📋 Copy Referral Link</button>
+          <a id="waShareLink" href="#" target="_blank" class="px-5 py-3 rounded-xl bg-green-600 text-white font-semibold hover:scale-105 transition">💬 Share on WhatsApp</a>
+        </div>
+        <p id="copyMessage" class="mt-3 text-green-700 hidden">✅ Referral link copied!</p>
+      </div>
+
+      <!-- Toast / Confirmation -->
+      <div id="toast" class="pointer-events-none fixed inset-x-0 top-4 mx-auto w-[90%] sm:w-auto hidden">
+        <div class="bg-black text-white/90 border border-yellow-500/40 px-4 py-3 rounded-xl shadow-glow">
+          Redirecting you to WhatsApp…
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section id="contact" class="bg-black text-gray-300 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10 text-center">
+      <p class="text-sm uppercase tracking-widest text-gray-400">Contact</p>
+      <h3 class="text-2xl md:text-3xl font-bold text-yellow-400 mt-1">We're here to help</h3>
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="mailto:musteegoku@gmail.com" class="px-5 py-3 rounded-xl border border-yellow-500/50 hover:bg-yellow-500/10">📧 Email</a>
+        <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl bg-yellow-500 text-black font-semibold">💬 WhatsApp</a>
+        <a href="https://www.facebook.com/profile.php?id=61578570127200" target="_blank" class="px-5 py-3 rounded-xl border border-yellow-500/50 hover:bg-yellow-500/10">📘 Facebook</a>
+      </div>
+      <p class="mt-8 text-xs text-gray-500">© 2025 MGK ARKMA Digital Services. All Rights Reserved.</p>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="fixed bottom-5 right-5 inline-flex items-center justify-center h-14 w-14 rounded-full bg-green-500 shadow-lg hover:scale-110 active:scale-95 transition" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // ===== Config =====
+    const WA_NUMBER = '2348138588514';
+    const REFERRAL_LINK = 'https://mgkarkmadigitalservice.netlify.app/';
+
+    // ===== Referral form -> open WhatsApp with pre-filled message =====
+    const form = document.getElementById('referralForm');
+    const toast = document.getElementById('toast');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const referrer = (data.get('referrer') || '').trim();
+      const referrerPhone = (data.get('referrerPhone') || '').trim();
+      const friend = (data.get('friend') || '').trim();
+      const friendPhone = (data.get('friendPhone') || '').trim();
+      const notes = (data.get('notes') || '').trim();
+
+      if (!referrer || !friend || !friendPhone) {
+        alert('Please fill in Your Name, Friend\\'s Name, and Friend\\'s Phone.');
+        return;
+      }
+
+      const message =
+        `New referral for MGK ARKMA:%0A` +
+        `Referrer: ${encodeURIComponent(referrer)}%0A` +
+        (referrerPhone ? `Referrer Phone: ${encodeURIComponent(referrerPhone)}%0A` : '') +
+        `Friend: ${encodeURIComponent(friend)}%0A` +
+        `Friend Phone: ${encodeURIComponent(friendPhone)}%0A` +
+        (notes ? `Notes: ${encodeURIComponent(notes)}%0A` : '') +
+        `%0APlease guide them on next steps. Thank you.`;
+
+      showToast();
+      const waUrl = `https://wa.me/${WA_NUMBER}?text=${message}`;
+      window.open(waUrl, '_blank', 'noopener');
+    });
+
+    function showToast() {
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 2500);
+    }
+
+    // ===== Extra referral actions (Copy link + WhatsApp share) =====
+    const copyBtn = document.getElementById('copyLinkBtn');
+    const copyMsg = document.getElementById('copyMessage');
+    const waShare = document.getElementById('waShareLink');
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(REFERRAL_LINK);
+        copyMsg.classList.remove('hidden');
+        setTimeout(() => copyMsg.classList.add('hidden'), 3000);
+      } catch (e) {
+        alert('Could not copy link. Please copy manually: ' + REFERRAL_LINK);
+      }
+    });
+
+    const shareText = encodeURIComponent(`Hey! Check out MGK ARKMA Digital Services and get 50% off your next service: ${REFERRAL_LINK}`);
+    waShare.href = `https://wa.me/?text=${shareText}`;
+  </script>
+</body>
+</html>m<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mgkarkmadigitalservice.netlify.app/</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ✅ Google Site Verification -->
+  <meta name="google-site-verification" content="Tp-z9W5R-MslCTCthDzH52ikGT3HB163khQ5xt6BSKk" />
+
+  <!-- ✅ SEO -->
+  <title>MGK ARKMA Digital Services -- CAC & TIN, NIN/BVN, Logos, Landing Pages</title>
+  <meta name="description" content="MGK ARKMA Digital Services: CAC & TIN registration, NIN/BVN corrections, logo & landing page design, TNT/courier support, and newspaper publications. Professional, fast, and reliable." />
+  <meta name="keywords" content="MGK ARKMA Digital Services, CAC, TIN, NIN, BVN, logo design, landing page, newspaper publication, TNT, Nigeria" />
+  <meta name="author" content="MGK ARKMA Digital Services" />
+
+  <!-- ✅ Open Graph / Social -->
+  <meta property="og:title" content="MGK ARKMA Digital Services" />
+  <meta property="og:description" content="Reliable digital & business services: CAC/TIN registration, NIN/BVN corrections, logo & landing page design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#FACC15', // amber-400 as brand gold
+              dark: '#0a0a0a'
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 3px rgba(250, 204, 21, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Smooth scroll for in-page links */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-yellow-900 text-white font-sans selection:bg-yellow-500 selection:text-black">
+
+  <!-- Top Bar -->
+  <div class="bg-black/70 text-gray-300 text-sm px-4 py-2 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+    <span>📧 <a class="hover:text-brand-gold" href="mailto:musteegoku@gmail.com">musteegoku@gmail.com</a></span>
+    <span>💬 <a class="hover:text-brand-gold" href="https://wa.me/2348138588514" target="_blank" rel="noopener">+234 813 858 8514</a></span>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-gradient-to-r from-black/90 to-yellow-900/30 backdrop-blur border-b border-yellow-900/30">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2 group">
+        <div class="h-9 w-9 rounded-xl bg-yellow-500/20 grid place-items-center ring-1 ring-yellow-500/30 group-hover:shadow-glow transition">
+          <span class="font-black text-yellow-400">MGK</span>
+        </div>
+        <div class="leading-tight">
+          <p class="font-bold text-yellow-400">MGK ARKMA</p>
+          <p class="text-[11px] uppercase tracking-widest text-gray-300">Digital Services</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-yellow-400" href="#services">Services</a>
+        <a class="hover:text-yellow-400" href="#pricing">Pricing</a>
+        <a class="hover:text-yellow-400" href="#referral">Referral</a>
+        <a class="hover:text-yellow-400" href="#testimonials">Reviews</a>
+        <a class="hover:text-yellow-400" href="#contact">Contact</a>
+      </nav>
+      <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-yellow-500 text-black px-4 py-2 rounded-xl font-semibold shadow hover:scale-[1.02] active:scale-[.98] transition">
+        <span class="animate-pulse">WhatsApp</span> 💬
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative min-h-[85vh] grid place-items-center text-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1600&q=80" alt="Abstract tech background" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/70 to-gray-900/80"></div>
+
+    <div class="relative z-10 max-w-3xl px-4 md:px-6">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-yellow-400 tracking-tight animate-bounce">
+        Professional & Reliable Digital Services
+      </h1>
+      <p class="mt-4 text-gray-200 text-base md:text-lg">
+        We offer <span class="font-semibold text-yellow-300">Logo Design</span>, <span class="font-semibold text-yellow-300">Landing Pages</span>, <span class="font-semibold text-yellow-300">NIN & BVN Corrections</span>, <span class="font-semibold text-yellow-300">CAC & TIN Registration</span>, TNT services, and Newspaper Publications.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#services" class="inline-block bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition">Explore Services</a>
+        <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="inline-block border border-yellow-500/60 px-6 py-3 rounded-xl font-semibold text-yellow-300 hover:bg-yellow-500/10 transition animate-pulse">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">Our Services</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Logo & Branding</h3>
+          <p class="text-gray-300 mt-2">Creative, memorable logos and brand identity that represent your business professionally.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Landing Pages</h3>
+          <p class="text-gray-300 mt-2">High-converting, mobile-friendly pages to present your offers clearly.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">NIN & BVN Corrections</h3>
+          <p class="text-gray-300 mt-2">Fast and reliable support for personal data updates.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">CAC & TIN Registration</h3>
+          <p class="text-gray-300 mt-2">Register your business officially with the Corporate Affairs Commission.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">TNT / Courier Support</h3>
+          <p class="text-gray-300 mt-2">Quick and safe support for sending and receiving documents.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h3>
+          <p class="text-gray-300 mt-2">Get your announcements published in leading newspapers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">Transparent Pricing</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Logo Design</h3>
+          <p class="mt-2 text-gray-300">Unique professional logo for your brand.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">₦1,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Landing Page</h3>
+          <p class="mt-2 text-gray-300">Single-page website to showcase your business.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">₦5,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">NIN & BVN Correction</h3>
+          <p class="mt-2 text-gray-300">Depends on your request. Chat us for details.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">Custom</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">CAC & TIN Registration</h3>
+          <p class="mt-2 text-gray-300">Official registration services.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">From ₦20,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h3>
+          <p class="mt-2 text-gray-300">Announcements in top newspapers.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">From ₦20,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-gradient-to-b from-gray-900 to-black">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">What Our Clients Say</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"MGK ARKMA designed my logo and landing page. The result was outstanding and professional!"</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- Aisha, Business Owner</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"They helped me fix my NIN and BVN issues quickly. Highly recommend their services."</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- Musa, Entrepreneur</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"I registered my company through them. Fast, reliable, and very affordable."</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- David, CEO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referral Program (Form + Extra Copy/Share Options) -->
+  <section id="referral" class="py-16 bg-gray-100 text-gray-900">
+    <div class="max-w-3xl mx-auto px-4 md:px-6 text-center">
+      <h2 class="text-3xl font-extrabold mb-3">🎉 Refer a Friend & Get 50% OFF</h2>
+      <p class="text-gray-700">Fill in the details below. On submit, we'll open WhatsApp with your referral pre-filled to <span class="font-semibold">+234 813 858 8514</span>.</p>
+
+      <!-- WhatsApp Referral Form -->
+      <form id="referralForm" class="mt-8 grid gap-4 text-left">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="text-sm font-medium">Your Name</span>
+            <input type="text" name="referrer" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., Mustapha Abdulrasheed" required />
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Your Phone (optional)</span>
+            <input type="tel" name="referrerPhone" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., 0803…" />
+          </label>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="text-sm font-medium">Friend's Name</span>
+            <input type="text" name="friend" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., Aisha Bello" required />
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Friend's Phone</span>
+            <input type="tel" name="friendPhone" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., 0813…" required />
+          </label>
+        </div>
+        <label class="block">
+          <span class="text-sm font-medium">Notes (optional)</span>
+          <textarea name="notes" rows="3" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Any extra info…"></textarea>
+        </label>
+
+        <button type="submit" class="mt-2 inline-flex justify-center items-center gap-2 bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-[1.02] active:scale-[.98] transition">
+          Submit & Open WhatsApp 💬
+        </button>
+      </form>
+
+      <!-- Extra: Copy/Share Referral (from version 4) -->
+      <div class="mt-8 p-4 rounded-xl border border-gray-300 bg-white/70 text-gray-800">
+        <p class="font-semibold mb-3">Or share your referral link directly:</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <button id="copyLinkBtn" class="px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:scale-105 transition">📋 Copy Referral Link</button>
+          <a id="waShareLink" href="#" target="_blank" class="px-5 py-3 rounded-xl bg-green-600 text-white font-semibold hover:scale-105 transition">💬 Share on WhatsApp</a>
+        </div>
+        <p id="copyMessage" class="mt-3 text-green-700 hidden">✅ Referral link copied!</p>
+      </div>
+
+      <!-- Toast / Confirmation -->
+      <div id="toast" class="pointer-events-none fixed inset-x-0 top-4 mx-auto w-[90%] sm:w-auto hidden">
+        <div class="bg-black text-white/90 border border-yellow-500/40 px-4 py-3 rounded-xl shadow-glow">
+          Redirecting you to WhatsApp…
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section id="contact" class="bg-black text-gray-300 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10 text-center">
+      <p class="text-sm uppercase tracking-widest text-gray-400">Contact</p>
+      <h3 class="text-2xl md:text-3xl font-bold text-yellow-400 mt-1">We're here to help</h3>
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="mailto:musteegoku@gmail.com" class="px-5 py-3 rounded-xl border border-yellow-500/50 hover:bg-yellow-500/10">📧 Email</a>
+        <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl bg-yellow-500 text-black font-semibold">💬 WhatsApp</a>
+        <a href="https://www.facebook.com/profile.php?id=61578570127200" target="_blank" class="px-5 py-3 rounded-xl border border-yellow-500/50 hover:bg-yellow-500/10">📘 Facebook</a>
+      </div>
+      <p class="mt-8 text-xs text-gray-500">© 2025 MGK ARKMA Digital Services. All Rights Reserved.</p>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="fixed bottom-5 right-5 inline-flex items-center justify-center h-14 w-14 rounded-full bg-green-500 shadow-lg hover:scale-110 active:scale-95 transition" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // ===== Config =====
+    const WA_NUMBER = '2348138588514';
+    const REFERRAL_LINK = 'https://mgkarkmadigitalservice.netlify.app/';
+
+    // ===== Referral form -> open WhatsApp with pre-filled message =====
+    const form = document.getElementById('referralForm');
+    const toast = document.getElementById('toast');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const referrer = (data.get('referrer') || '').trim();
+      const referrerPhone = (data.get('referrerPhone') || '').trim();
+      const friend = (data.get('friend') || '').trim();
+      const friendPhone = (data.get('friendPhone') || '').trim();
+      const notes = (data.get('notes') || '').trim();
+
+      if (!referrer || !friend || !friendPhone) {
+        alert('Please fill in Your Name, Friend\\'s Name, and Friend\\'s Phone.');
+        return;
+      }
+
+      const message =
+        `New referral for MGK ARKMA:%0A` +
+        `Referrer: ${encodeURIComponent(referrer)}%0A` +
+        (referrerPhone ? `Referrer Phone: ${encodeURIComponent(referrerPhone)}%0A` : '') +
+        `Friend: ${encodeURIComponent(friend)}%0A` +
+        `Friend Phone: ${encodeURIComponent(friendPhone)}%0A` +
+        (notes ? `Notes: ${encodeURIComponent(notes)}%0A` : '') +
+        `%0APlease guide them on next steps. Thank you.`;
+
+      showToast();
+      const waUrl = `https://wa.me/${WA_NUMBER}?text=${message}`;
+      window.open(waUrl, '_blank', 'noopener');
+    });
+
+    function showToast() {
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 2500);
+    }
+
+    // ===== Extra referral actions (Copy link + WhatsApp share) =====
+    const copyBtn = document.getElementById('copyLinkBtn');
+    const copyMsg = document.getElementById('copyMessage');
+    const waShare = document.getElementById('waShareLink');
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(REFERRAL_LINK);
+        copyMsg.classList.remove('hidden');
+        setTimeout(() => copyMsg.classList.add('hidden'), 3000);
+      } catch (e) {
+        alert('Could not copy link. Please copy manually: ' + REFERRAL_LINK);
+      }
+    });
+
+    const shareText = encodeURIComponent(`Hey! Check out MGK ARKMA Digital Services and get 50% off your next service: ${REFERRAL_LINK}`);
+    waShare.href = `https://wa.me/?text=${shareText}`;
+  </script>
+</body>
+</html>m<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ✅ Google Site Verification -->
+  <meta name="google-site-verification" content="Tp-z9W5R-MslCTCthDzH52ikGT3HB163khQ5xt6BSKk" />
+
+  <!-- ✅ SEO -->
+  <title>MGK ARKMA Digital Services -- CAC & TIN, NIN/BVN, Logos, Landing Pages</title>
+  <meta name="description" content="MGK ARKMA Digital Services: CAC & TIN registration, NIN/BVN corrections, logo & landing page design, TNT/courier support, and newspaper publications. Professional, fast, and reliable." />
+  <meta name="keywords" content="MGK ARKMA Digital Services, CAC, TIN, NIN, BVN, logo design, landing page, newspaper publication, TNT, Nigeria" />
+  <meta name="author" content="MGK ARKMA Digital Services" />
+
+  <!-- ✅ Open Graph / Social -->
+  <meta property="og:title" content="MGK ARKMA Digital Services" />
+  <meta property="og:description" content="Reliable digital & business services: CAC/TIN registration, NIN/BVN corrections, logo & landing page design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#FACC15', // amber-400 as brand gold
+              dark: '#0a0a0a'
+            }
+          },
+          boxShadow: {
+            glow: '0 0 0 3px rgba(250, 204, 21, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Smooth scroll for in-page links */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-yellow-900 text-white font-sans selection:bg-yellow-500 selection:text-black">
+
+  <!-- Top Bar -->
+  <div class="bg-black/70 text-gray-300 text-sm px-4 py-2 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+    <span>📧 <a class="hover:text-brand-gold" href="mailto:musteegoku@gmail.com">musteegoku@gmail.com</a></span>
+    <span>💬 <a class="hover:text-brand-gold" href="https://wa.me/2348138588514" target="_blank" rel="noopener">+234 813 858 8514</a></span>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-gradient-to-r from-black/90 to-yellow-900/30 backdrop-blur border-b border-yellow-900/30">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2 group">
+        <div class="h-9 w-9 rounded-xl bg-yellow-500/20 grid place-items-center ring-1 ring-yellow-500/30 group-hover:shadow-glow transition">
+          <span class="font-black text-yellow-400">MGK</span>
+        </div>
+        <div class="leading-tight">
+          <p class="font-bold text-yellow-400">MGK ARKMA</p>
+          <p class="text-[11px] uppercase tracking-widest text-gray-300">Digital Services</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-yellow-400" href="#services">Services</a>
+        <a class="hover:text-yellow-400" href="#pricing">Pricing</a>
+        <a class="hover:text-yellow-400" href="#referral">Referral</a>
+        <a class="hover:text-yellow-400" href="#testimonials">Reviews</a>
+        <a class="hover:text-yellow-400" href="#contact">Contact</a>
+      </nav>
+      <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-yellow-500 text-black px-4 py-2 rounded-xl font-semibold shadow hover:scale-[1.02] active:scale-[.98] transition">
+        <span class="animate-pulse">WhatsApp</span> 💬
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative min-h-[85vh] grid place-items-center text-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1600&q=80" alt="Abstract tech background" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/70 to-gray-900/80"></div>
+
+    <div class="relative z-10 max-w-3xl px-4 md:px-6">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-yellow-400 tracking-tight animate-bounce">
+        Professional & Reliable Digital Services
+      </h1>
+      <p class="mt-4 text-gray-200 text-base md:text-lg">
+        We offer <span class="font-semibold text-yellow-300">Logo Design</span>, <span class="font-semibold text-yellow-300">Landing Pages</span>, <span class="font-semibold text-yellow-300">NIN & BVN Corrections</span>, <span class="font-semibold text-yellow-300">CAC & TIN Registration</span>, TNT services, and Newspaper Publications.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#services" class="inline-block bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-105 transition">Explore Services</a>
+        <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="inline-block border border-yellow-500/60 px-6 py-3 rounded-xl font-semibold text-yellow-300 hover:bg-yellow-500/10 transition animate-pulse">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">Our Services</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Logo & Branding</h3>
+          <p class="text-gray-300 mt-2">Creative, memorable logos and brand identity that represent your business professionally.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Landing Pages</h3>
+          <p class="text-gray-300 mt-2">High-converting, mobile-friendly pages to present your offers clearly.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">NIN & BVN Corrections</h3>
+          <p class="text-gray-300 mt-2">Fast and reliable support for personal data updates.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">CAC & TIN Registration</h3>
+          <p class="text-gray-300 mt-2">Register your business officially with the Corporate Affairs Commission.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">TNT / Courier Support</h3>
+          <p class="text-gray-300 mt-2">Quick and safe support for sending and receiving documents.</p>
+        </div>
+        <div class="p-6 bg-gray-800/70 rounded-2xl shadow-lg hover:scale-[1.02] transition">
+          <h3 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h3>
+          <p class="text-gray-300 mt-2">Get your announcements published in leading newspapers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">Transparent Pricing</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Logo Design</h3>
+          <p class="mt-2 text-gray-300">Unique professional logo for your brand.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">₦1,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Landing Page</h3>
+          <p class="mt-2 text-gray-300">Single-page website to showcase your business.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">₦5,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">NIN & BVN Correction</h3>
+          <p class="mt-2 text-gray-300">Depends on your request. Chat us for details.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">Custom</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">CAC & TIN Registration</h3>
+          <p class="mt-2 text-gray-300">Official registration services.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">From ₦20,000</p>
+        </div>
+        <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition text-center">
+          <h3 class="text-xl font-semibold text-yellow-300">Newspaper Publications</h3>
+          <p class="mt-2 text-gray-300">Announcements in top newspapers.</p>
+          <p class="mt-4 text-3xl font-extrabold text-yellow-400">From ₦20,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-gradient-to-b from-gray-900 to-black">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 text-center mb-10">What Our Clients Say</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"MGK ARKMA designed my logo and landing page. The result was outstanding and professional!"</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- Aisha, Business Owner</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"They helped me fix my NIN and BVN issues quickly. Highly recommend their services."</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- Musa, Entrepreneur</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl shadow">
+          <p class="text-gray-200 italic">"I registered my company through them. Fast, reliable, and very affordable."</p>
+          <p class="mt-4 font-semibold text-yellow-300">-- David, CEO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referral Program (Form + Extra Copy/Share Options) -->
+  <section id="referral" class="py-16 bg-gray-100 text-gray-900">
+    <div class="max-w-3xl mx-auto px-4 md:px-6 text-center">
+      <h2 class="text-3xl font-extrabold mb-3">🎉 Refer a Friend & Get 50% OFF</h2>
+      <p class="text-gray-700">Fill in the details below. On submit, we'll open WhatsApp with your referral pre-filled to <span class="font-semibold">+234 813 858 8514</span>.</p>
+
+      <!-- WhatsApp Referral Form -->
+      <form id="referralForm" class="mt-8 grid gap-4 text-left">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="text-sm font-medium">Your Name</span>
+            <input type="text" name="referrer" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., Mustapha Abdulrasheed" required />
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Your Phone (optional)</span>
+            <input type="tel" name="referrerPhone" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., 0803…" />
+          </label>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="text-sm font-medium">Friend's Name</span>
+            <input type="text" name="friend" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., Aisha Bello" required />
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Friend's Phone</span>
+            <input type="tel" name="friendPhone" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="e.g., 0813…" required />
+          </label>
+        </div>
+        <label class="block">
+          <span class="text-sm font-medium">Notes (optional)</span>
+          <textarea name="notes" rows="3" class="mt-1 w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Any extra info…"></textarea>
+        </label>
+
+        <button type="submit" class="mt-2 inline-flex justify-center items-center gap-2 bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold shadow hover:scale-[1.02] active:scale-[.98] transition">
+          Submit & Open WhatsApp 💬
+        </button>
+      </form>
+
+      <!-- Extra: Copy/Share Referral (from version 4) -->
+      <div class="mt-8 p-4 rounded-xl border border-gray-300 bg-white/70 text-gray-800">
+        <p class="font-semibold mb-3">Or share your referral link directly:</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <button id="copyLinkBtn" class="px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:scale-105 transition">📋 Copy Referral Link</button>
+          <a id="waShareLink" href="#" target="_blank" class="px-5 py-3 rounded-xl bg-green-600 text-white font-semibold hover:scale-105 transition">💬 Share on WhatsApp</a>
+        </div>
+        <p id="copyMessage" class="mt-3 text-green-700 hidden">✅ Referral link copied!</p>
+      </div>
+
+      <!-- Toast / Confirmation -->
+      <div id="toast" class="pointer-events-none fixed inset-x-0 top-4 mx-auto w-[90%] sm:w-auto hidden">
+        <div class="bg-black text-white/90 border border-yellow-500/40 px-4 py-3 rounded-xl shadow-glow">
+          Redirecting you to WhatsApp…
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section id="contact" class="bg-black text-gray-300 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10 text-center">
+      <p class="text-sm uppercase tracking-widest text-gray-400">Contact</p>
+      <h3 class="text-2xl md:text-3xl font-bold text-yellow-400 mt-1">We're here to help</h3>
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="mailto:musteegoku@gmail.com" class="px-5 py-3 rounded-xl border border-yellow-500/50 hover:bg-yellow-500/10">📧 Email</a>
+        <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl bg-yellow-500 text-black font-semibold">💬 WhatsApp</a>
+        <a href="https://www.facebook.com/profile.php?id=61578570127200" target="_blank" class="px-5 py-3 rounded-xl border border-yellow-500/50 hover:bg-yellow-500/10">📘 Facebook</a>
+      </div>
+      <p class="mt-8 text-xs text-gray-500">© 2025 MGK ARKMA Digital Services. All Rights Reserved.</p>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/2348138588514" target="_blank" rel="noopener" class="fixed bottom-5 right-5 inline-flex items-center justify-center h-14 w-14 rounded-full bg-green-500 shadow-lg hover:scale-110 active:scale-95 transition" aria-label="Chat on WhatsApp">
+    💬
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // ===== Config =====
+    const WA_NUMBER = '2348138588514';
+    const REFERRAL_LINK = 'https://mgkarkmadigitalservice.netlify.app/';
+
+    // ===== Referral form -> open WhatsApp with pre-filled message =====
+    const form = document.getElementById('referralForm');
+    const toast = document.getElementById('toast');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const referrer = (data.get('referrer') || '').trim();
+      const referrerPhone = (data.get('referrerPhone') || '').trim();
+      const friend = (data.get('friend') || '').trim();
+      const friendPhone = (data.get('friendPhone') || '').trim();
+      const notes = (data.get('notes') || '').trim();
+
+      if (!referrer || !friend || !friendPhone) {
+        alert('Please fill in Your Name, Friend\\'s Name, and Friend\\'s Phone.');
+        return;
+      }
+
+      const message =
+        `New referral for MGK ARKMA:%0A` +
+        `Referrer: ${encodeURIComponent(referrer)}%0A` +
+        (referrerPhone ? `Referrer Phone: ${encodeURIComponent(referrerPhone)}%0A` : '') +
+        `Friend: ${encodeURIComponent(friend)}%0A` +
+        `Friend Phone: ${encodeURIComponent(friendPhone)}%0A` +
+        (notes ? `Notes: ${encodeURIComponent(notes)}%0A` : '') +
+        `%0APlease guide them on next steps. Thank you.`;
+
+      showToast();
+      const waUrl = `https://wa.me/${WA_NUMBER}?text=${message}`;
+      window.open(waUrl, '_blank', 'noopener');
+    });
+
+    function showToast() {
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 2500);
+    }
+
+    // ===== Extra referral actions (Copy link + WhatsApp share) =====
+    const copyBtn = document.getElementById('copyLinkBtn');
+    const copyMsg = document.getElementById('copyMessage');
+    const waShare = document.getElementById('waShareLink');
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(REFERRAL_LINK);
+        copyMsg.classList.remove('hidden');
+        setTimeout(() => copyMsg.classList.add('hidden'), 3000);
+      } catch (e) {
+        alert('Could not copy link. Please copy manually: ' + REFERRAL_LINK);
+      }
+    });
+
+    const shareText = encodeURIComponent(`Hey! Check out MGK ARKMA Digital Services and get 50% off your next service: ${REFERRAL_LINK}`);
+    waShare.href = `https://wa.me/?text=${shareText}`;
+  </script>
+</body>
+</html>m<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mgkarkmadigitalservice.netlify.app/</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
